@@ -1,0 +1,11 @@
+.header {
+  padding-top: 20px;
+  display: flex;
+}
+.header__wrapper {
+  justify-content: center;
+  margin: auto;
+}
+.header__logo {
+  max-width: 80px;
+}

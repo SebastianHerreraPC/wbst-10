@@ -1,4 +1,6 @@
+@import url(/blocks/header.css);
+
 body {
-  background-color: #033349;
-  color: #9ef6ff;
+  background-color: #9ef6ff;
+  color: #033349;
 }
