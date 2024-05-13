@@ -4,4 +4,9 @@
 body {
   background-color: #9ef6ff;
   color: #033349;
+
+  height: 100%;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 880px;
 }
