@@ -31,6 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  overflow: hidden;
 }
 .card__item {
   width: 250px;
@@ -42,6 +43,11 @@
   background-size: cover;
   font-family: "Inter", Arial, sans-serif;
   overflow: hidden;
+}
+
+.card__item:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(0.9);
 }
 
 .card__item:nth-of-type(2n) {
@@ -83,8 +89,6 @@
 }
 
 .card__item:hover .card_image_gato-1 {
-  transition: transform 0.5s ease-in-out;
-  transform: scale(1.5);
 }
 .card_image_gato-2 {
 }
@@ -97,9 +101,7 @@
   font-size: 30px;
   font-size: 20px;
 }
-.card__subtitle_dark {
-  color: black;
-}
+
 .card__subtitle_gatico {
   top: -15px;
   left: 15px;
@@ -111,5 +113,19 @@
   transition: opacity 0.3s ease;
 }
 .card__item:hover .card__subtitle_gatico {
+  opacity: 1;
+}
+.card__subtitle_perrito {
+  top: -15px;
+  left: 15px;
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card__item:hover .card__subtitle_perrito {
   opacity: 1;
 }
